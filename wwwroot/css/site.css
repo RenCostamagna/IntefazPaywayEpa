@@ -1,0 +1,60 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-container {
+    border: 1px solid #ccc; /* Borde del recuadro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    max-width: 400px; /* Ancho máximo del recuadro */
+    margin: auto; /* Centrar el recuadro */
+    background-color: #f9f9f9; /* Color de fondo */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre los grupos de formulario */
+}
+
+label {
+    display: block; /* Hacer que las etiquetas ocupen toda la línea */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo */
+}
+
+input {
+    width: 100%; /* Hacer que los campos de entrada ocupen todo el ancho */
+    padding: 8px; /* Espaciado interno en los campos */
+    border: 1px solid #ccc; /* Borde de los campos */
+    border-radius: 4px; /* Bordes redondeados en los campos */
+}
+
+button {
+    padding: 10px 15px; /* Espaciado interno del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados en el botón */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}

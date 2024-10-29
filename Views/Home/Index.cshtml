@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Tarjeta de crédito";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!-- Formulario para cargar datos de la tarjeta de crédito -->
+<div class="form-container">
+    <form id="creditCardForm">
+        <div class="form-group">
+            <label for="cardHolderName">Nombre del titular:</label>
+            <input type="text" id="cardHolderName" name="cardHolderName" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="cardNumber">Número de tarjeta:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required pattern="\d{16}" title="Debe tener 16 dígitos.">
+        </div>
+        
+        <div class="form-group">
+            <label for="expiryDate">Fecha de expiración (MM/YY):</label>
+            <input type="text" id="expiryDate" name="expiryDate" required pattern="(0[1-9]|1[0-2])\/\d{4}" title="Formato: MM/YYYY">
+        </div>
+        
+        <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required pattern="\d{3}" title="Debe tener 3 dígitos.">
+        </div>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('creditCardForm').addEventListener('submit', function(event) {
+        // Validaciones adicionales pueden ir aquí
+        alert('Formulario enviado correctamente.');
+    });
+</script>
